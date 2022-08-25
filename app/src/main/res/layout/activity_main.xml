@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#488781"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="90dp">
+
+        <EditText
+            android:id="@+id/introducir"
+            android:layout_width="177dp"
+            android:layout_height="42dp"
+            android:background="#3F51B5"
+            android:ems="10"
+            android:hint="Ingresar calculo"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.713"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteY="388dp" />
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Calcular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.662"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/introducir" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="354dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="36dp"
+            android:text="esperando......."
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calcular" />
+
+        <TextView
+            android:id="@+id/calcularr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="Calcular: "
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="388dp" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="53dp"
+            android:text="Nombre"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="63dp"
+            android:text="Edad"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+        <TextView
+            android:id="@+id/sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="33dp"
+            android:text="Sexo"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/esCivil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edad" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <TextView
+            android:id="@+id/esCivil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="40dp"
+            android:text="Estado Civil"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sexo" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="34dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/mSoltera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="12dp"
+            android:text="Eres mamá Soltera"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="188dp"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="278dp">
+
+            <RadioButton
+                android:id="@+id/btnSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Si" />
+
+            <RadioButton
+                android:id="@+id/btnNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="217dp"
+            android:layout_height="43dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="152dp">
+
+            <RadioButton
+                android:id="@+id/BtnMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/btnFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Femenino" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
